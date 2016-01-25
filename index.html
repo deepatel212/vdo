@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Videochat</title>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+        <style>
+            video{width:100%}
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-4">
+                        <hr>
+                <label for="yourId">YourId</label>
+                <textarea name="Yourid" id="yourId" class="form-control" cols="30" rows="5"></textarea><br>
+                <label for="otherId">OtherId</label>
+                <textarea name="Otherid" id="otherId" class="form-control" cols="30" rows="5"></textarea><br>
+                <br>
+                <button class="btn btn-block btn-success" id="connect">Connect</button><br>
+                
+                </div>
+                <div class="col-md-4 col-md-offset-1">
+                    <hr><br>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">Enter Your Message</div>
+                        <div class="panel-body">
+                                <textarea name="yourmessage" id="yourMessage" cols="30" rows="5" class="form-control"></textarea>
+                            <div class="panel-footer">
+                                <button class="btn btn-block btn-success" id="send">Send</button>
+                                
+                            </div>
+                        </div>
+                    </div><hr>
+                    <pre id="messages"></pre>
+                   
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" id="videoContainer">
+                    
+                </div>
+            </div>
+            
+        </div>
+        <script src="bundle.js"></script>
+    </body>
+</html>
